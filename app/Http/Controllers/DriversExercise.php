@@ -14,7 +14,8 @@ class DriversExercise extends Controller
       'hdd' => 'dysk twardy',
       'ssd' => 'SSD'
     ];
-    return $drives[$drive];
+    //return $drives[$drive];
+    vardump($drives);
     }
 
 }

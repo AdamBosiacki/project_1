@@ -101,3 +101,14 @@ Route::get('blade', function(){
 Route::get('site/{cdvsite}', [App\Http\Controllers\CdvSite::class, 'index']);
 
 Route::get('drives/{driver}', [App\Http\Controllers\DriversExercise::class, 'show']);
+
+Route::get('userform', function(){
+  return view('userform');
+});
+
+Route::post('UserController', [App\Http\Controllers\UserController::class, 'account']);
+
+Route::view('user','user');
+Route::post('UserController1', [App\Http\Controllers\UserController1::class, 'index']);
+
+Route::post('Form', [App\Http\Controllers\Form::class, 'index']);
