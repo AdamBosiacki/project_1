@@ -112,3 +112,7 @@ Route::view('user','user');
 Route::post('UserController1', [App\Http\Controllers\UserController1::class, 'index']);
 
 Route::post('Form', [App\Http\Controllers\Form::class, 'index']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
