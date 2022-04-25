@@ -61,6 +61,14 @@
                             </div>
                         </div>
 
+                        <div class="row mb-3">
+                            <label for="birthday" class="col-md-4 col-form-label text-md-end">{{ __('Birthday') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="birthday" type="date" class="form-control" name="birthday">
+                            </div>
+                        </div>
+
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
