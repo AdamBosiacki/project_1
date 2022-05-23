@@ -29,11 +29,11 @@ class HomeController extends Controller
         //POKAZUJE USEROW PO ZALOGOWANIU
         //$data = Test::select(['name', 'surname'])->get();
 
-        $data = Test::select(['*'])
+        /*$data = Test::select(['*'])
         ->where('name', 'mikołaj')
         ->get();
 
-        return view('test1', ['data'=>$data]);
+        return view('test1', ['data'=>$data]);*/
 
         //TUTAJ JAKAŚ RANDOMOWA PRÓBA
         /*$name = Auth::user()->name;
@@ -45,7 +45,7 @@ class HomeController extends Controller
         $test = new Test();
         $test->name = $name;
         $test->surname = 'Nowak';
-        $test->save();
-        return view('adminlte.dashboard');*/
+        $test->save();*/
+        return view('adminlte.dashboard');
     }
 }

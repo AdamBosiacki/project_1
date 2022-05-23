@@ -131,3 +131,12 @@ Route::get('/logout', [App\Http\Controllers\LogOut::class, 'logout']);
 Route::get('/db', [App\Http\Controllers\db_controller::class, 'show']);
 
 Route::get('/books', [App\Http\Controllers\BookController::class, 'show']);
+
+//Route::view('profile', 'profile');
+
+Route::get('profile/{locale}', function ($locale) {
+    app()->setLocale($locale);
+    //MOŻE BYĆ NIE MUSI
+    //session()->put('locale', $locale);
+    return view('profile');
+});
