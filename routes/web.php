@@ -129,3 +129,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/logout', [App\Http\Controllers\LogOut::class, 'logout']);
 
 Route::get('/db', [App\Http\Controllers\db_controller::class, 'show']);
+
+Route::get('/books', [App\Http\Controllers\BookController::class, 'show']);
