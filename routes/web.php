@@ -135,3 +135,9 @@ Route::get('profile/{locale}', function ($locale) {
 Route::get('user', [App\Http\Controllers\UserController2::class, 'index'])->name('user');
 
 Route::get('admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
+
+Route::view('login1', 'login1');
+
+Route::post('login1',[App\Http\Controllers\Login1Controller::class, 'index']);
+
+Route::view('profile1', 'profile1');
