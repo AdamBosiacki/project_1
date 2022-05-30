@@ -108,7 +108,7 @@ Route::get('userform', function(){
 
 Route::post('UserController', [App\Http\Controllers\UserController::class, 'account']);
 
-Route::view('user','user');
+//Route::view('user','user');
 Route::post('UserController1', [App\Http\Controllers\UserController1::class, 'index']);
 
 Route::post('Form', [App\Http\Controllers\Form::class, 'index']);
@@ -116,15 +116,6 @@ Route::post('Form', [App\Http\Controllers\Form::class, 'index']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 
 Route::get('/logout', [App\Http\Controllers\LogOut::class, 'logout']);
 
@@ -140,3 +131,7 @@ Route::get('profile/{locale}', function ($locale) {
     //session()->put('locale', $locale);
     return view('profile');
 });
+
+Route::get('user', [App\Http\Controllers\UserController2::class, 'index'])->name('user');
+
+Route::get('admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
